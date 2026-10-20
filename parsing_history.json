@@ -1,0 +1,51 @@
+[
+  {
+    "batch": [
+      {
+        "url": "https://www.behance.net/",
+        "title": "",
+        "description": "",
+        "h1": [
+          "The maximum number of requests has been exceeded"
+        ],
+        "h2": [],
+        "preview_text": "  The maximum number of requests has been exceeded We apologize for any inconvenience. Please try again later.",
+        "parsed_at": "2026-10-20T15:47:40.626634",
+        "status": "success"
+      },
+      {
+        "url": "https://dribbble.com/",
+        "title": "",
+        "description": "",
+        "h1": [
+          "JavaScript is disabled"
+        ],
+        "h2": [],
+        "preview_text": "  JavaScript is disabled",
+        "parsed_at": "2026-10-20T15:47:45.383381",
+        "status": "success"
+      },
+      {
+        "url": "https://motionographer.com/",
+        "title": "Motionographer®  Unexpected Inspiration™",
+        "description": "Motionographer shares inspiring work and important news for the Motion Design, animation and visual effects communities.",
+        "h1": [
+          "Main",
+          "News",
+          "Quickies"
+        ],
+        "h2": [
+          "Creative Must Win: The Belief Behind RevThink’s Tim Thompson",
+          "STUDIO STORIES: Tonic DNA, The Studio That Refused to Be One Thing",
+          "Dear Upstairs Neighbors: How Connie He Taught a Machine to See the Way She Draws.",
+          "Motionographer’s 20th celebrations continue this Saturday. There’s still time to join us.",
+          "Motionographer turns 20 with Motion Plus Design New York: 20 seats for 20 years"
+        ],
+        "preview_text": "Motionographer®  Unexpected Inspiration™ Motionographer shares inspiring work and important news for the Motion Design, animation and visual effects communities. Main News Quickies Creative Must Win: The Belief Behind RevThink’s Tim Thompson STUDIO STORIES: Tonic DNA, The Studio That Refused to Be One Thing Dear Upstairs Neighbors: How Connie He Taught a Machine to See the Way She Draws. Motionographer’s 20th celebrations continue this Saturday. There’s still time to join us. Motionographer turns 20 with Motion Plus Design New York: 20 seats for 20 years  expands the Unexpected! Behind the Scenes The Founder's POV A Leader of the Heart Tim Thompson wanted to be a movie star. He made it to Hollywood, then spent nearly twenty years helping creative people build businesses, find their footing, and give themselves permission to change. Forty years in, Montreal’s Tonic DNA launches a refreshed identity, a new original holiday special, and a bet that AI can give hand-drawn animation a longer",
+        "parsed_at": "2026-10-20T15:47:52.171044",
+        "status": "success"
+      }
+    ],
+    "timestamp": "2026-10-20T15:47:52.359703"
+  }
+]

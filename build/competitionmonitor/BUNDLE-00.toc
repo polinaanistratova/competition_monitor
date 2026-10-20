@@ -1,0 +1,3 @@
+([('competitionmonitor',
+   '/Users/polinaanistratova/Desktop/competition_monitor/dist/competitionmonitor',
+   'EXECUTABLE')],)
