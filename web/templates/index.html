@@ -19,26 +19,26 @@
         
         <div id="text" class="tab-content active">
             <h2>Анализ текстового описания конкурента</h2>
-            <textarea id="textInput" placeholder="Вставьте описание конкурента, текст с лендинга и т.п."></textarea>
+            <textarea id="textInput" placeholder="Вставьте описание конкурента, текст с лендинга или страницы конкурента..."></textarea>
             <button onclick="analyzeText()">Анализировать</button>
-            <h3>Результат</h3>
-            <pre id="textResult"></pre>
+            <h3>Результат анализа</h3>
+            <div id="textResult" class="result-container"></div>
         </div>
         
         <div id="image" class="tab-content">
-            <h2>Анализ изображения/скриншота</h2>
+            <h2>Анализ изображения / скриншота лендинга</h2>
             <input type="file" id="imageFile" accept="image/*">
             <button onclick="analyzeImage()">Анализировать изображение</button>
-            <h3>Результат</h3>
-            <pre id="imageResult"></pre>
+            <h3>Результат анализа</h3>
+            <div id="imageResult" class="result-container"></div>
         </div>
         
         <div id="parse" class="tab-content">
-            <h2>Автоматический парсинг конкурентов</h2>
+            <h2>Автоматический парсинг сайтов конкурентов</h2>
             <button onclick="runParse()">Запустить парсинг (/parsedemo)</button>
-            <button onclick="getHistory()">Показать историю</button>
-            <h3>Результаты</h3>
-            <pre id="parseResult"></pre>
+            <button onclick="getHistory()">Показать историю парсинга</button>
+            <h3>Результаты парсинга</h3>
+            <div id="parseResult" class="result-container"></div>
         </div>
     </div>
     
