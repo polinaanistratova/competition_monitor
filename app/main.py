@@ -1,5 +1,7 @@
-from fastapi import FastAPI, UploadFile, File, Form
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, UploadFile, File, Form, Request
+from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 import base64
 import json
 from app.openaiservice import analyze_text, analyze_image
@@ -7,10 +9,18 @@ from app.parsingservice import CompetitorParser
 
 app = FastAPI(title="Competition Monitor", version="1.0.0")
 
+app.mount("/static", StaticFiles(directory="web/static"), name="static")
+templates = Jinja2Templates(directory="web/templates")
+
 
 @app.get("/")
 async def root():
     return {"status": "ok", "message": "Competition Monitor API"}
+
+
+@app.get("/web", response_class=HTMLResponse)
+async def web_interface(request: Request):
+    return templates.TemplateResponse(request, "index.html", {})
 
 
 @app.post("/analyzetext")

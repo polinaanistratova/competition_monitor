@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-анализатор конкурентов</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-анализатор рынка конкурентов</h1>
+        <p class="subtitle">Ниша: графический дизайн и анимация</p>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('text')">Анализ текста</button>
+            <button class="tab-btn" onclick="openTab('image')">Анализ изображения</button>
+            <button class="tab-btn" onclick="openTab('parse')">Парсинг сайтов</button>
+        </div>
+        
+        <div id="text" class="tab-content active">
+            <h2>Анализ текстового описания конкурента</h2>
+            <textarea id="textInput" placeholder="Вставьте описание конкурента, текст с лендинга и т.п."></textarea>
+            <button onclick="analyzeText()">Анализировать</button>
+            <h3>Результат</h3>
+            <pre id="textResult"></pre>
+        </div>
+        
+        <div id="image" class="tab-content">
+            <h2>Анализ изображения/скриншота</h2>
+            <input type="file" id="imageFile" accept="image/*">
+            <button onclick="analyzeImage()">Анализировать изображение</button>
+            <h3>Результат</h3>
+            <pre id="imageResult"></pre>
+        </div>
+        
+        <div id="parse" class="tab-content">
+            <h2>Автоматический парсинг конкурентов</h2>
+            <button onclick="runParse()">Запустить парсинг (/parsedemo)</button>
+            <button onclick="getHistory()">Показать историю</button>
+            <h3>Результаты</h3>
+            <pre id="parseResult"></pre>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
