@@ -8,5 +8,4 @@ PyInstaller.__main__.run([
     '--windowed',
     '--add-data=data:data',
     '--add-data=.env.example:.',
-    '--icon=NONE',
 ])
