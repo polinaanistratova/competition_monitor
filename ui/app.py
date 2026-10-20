@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QTabWidget, QWidget,
                              QPushButton, QFileDialog, QListWidget)
 from PyQt6.QtCore import Qt
 
-API_URL = "http://localhost:8000"
+API_URL = "http://127.0.0.1:8001"
 
 
 class CompetitionMonitorApp(QMainWindow):

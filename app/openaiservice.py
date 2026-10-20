@@ -1,7 +1,8 @@
 from openai import OpenAI
-from config import OPENAI_API_KEY, OPENAI_API_BASE, MODEL
+from config import OPENAI_API_KEY, OPENAI_API_BASE, MODEL, YANDEX_FOLDER_ID
+import json
 
-client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE) if OPENAI_API_KEY else None
+client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE, project=YANDEX_FOLDER_ID) if OPENAI_API_KEY else None
 
 
 def analyze_text(text: str) -> dict:
@@ -33,7 +34,11 @@ def analyze_text(text: str) -> dict:
             response_format={"type": "json_object"},
             temperature=0.3
         )
-        return response.choices[0].message.content
+        content = response.choices[0].message.content
+        try:
+            return json.loads(content)
+        except:
+            return {"raw": content}
     except Exception as e:
         return {"error": str(e)}
 
@@ -76,9 +81,12 @@ def analyze_image(image_base64: str, prompt: str = "") -> dict:
                     ]
                 }
             ],
-            response_format={"type": "json_object"},
             temperature=0.3
         )
-        return response.choices[0].message.content
+        content = response.choices[0].message.content
+        try:
+            return json.loads(content)
+        except:
+            return {"raw": content}
     except Exception as e:
         return {"error": str(e)}
